@@ -1,0 +1,240 @@
+<!DOCTYPE html> <html lang="zh-cn"><head>
+<title>4.基本命令</title>
+<base href="..">
+<meta name="pathname" content="加入服务器帮助/4.基本命令.html">
+<meta name="description" content="ChaiMC Doc - 4.基本命令">
+<meta property="og:title" content="4.基本命令">
+<meta property="og:description" content="ChaiMC Doc - 4.基本命令">
+<meta property="og:type" content="website">
+<meta property="og:url" content="加入服务器帮助/4.基本命令.html">
+<meta property="og:image" content="undefined">
+<meta charset="UTF-8"><meta property="og:site_name" content="ChaiMC Doc"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0"><script async="" id="webpage-script" src="site-lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-wasm-script" src="site-lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="site-lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="site-lib/media/favicon.png"><link rel="stylesheet" href="site-lib/styles/obsidian.css"><link rel="preload" href="site-lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="site-lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/main-styles.css"></noscript><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-vertical-spacing:1.3em;--sidebar-margin:12px}:root{background-color:#202124}.sidebar{height:100%;font-size:14px;z-index:10;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));position:relative;overflow:hidden;overflow:clip;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}#left-sidebar{left:0}#right-sidebar{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}.sidebar.floating{position:absolute}.sidebar .leaf-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .leaf-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}#left-sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}#right-sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar #left-sidebar-content,.sidebar #right-sidebar-content{contain:none!important;container-type:normal!important;animation:none!important}.sidebar:has(.leaf-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:calc(2.3em + 2 * var(--sidebar-margin));width:var(--sidebar-width);padding:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}#left-sidebar .sidebar-topbar{left:0;flex-direction:row;border-top-right-radius:var(--radius-l)}#right-sidebar .sidebar-topbar{right:0;flex-direction:row-reverse;border-top-left-radius:var(--radius-l)}#left-sidebar .topbar-content{margin-right:calc(2.3em + var(--sidebar-margin));flex-direction:row}#right-sidebar .topbar-content{margin-left:calc(2.3em + var(--sidebar-margin));flex-direction:row-reverse}.topbar-content{overflow:hidden visible;overflow:clip visible;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:2px!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}#left-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}#right-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.feature-title{margin-left:1px;text-transform:uppercase;letter-spacing:.06em;margin-top:.75em;margin-bottom:.75em}.feature-header{display:flex;align-items:center;padding-top:0;font-size:1em;padding-left:0}body.floating-sidebars .sidebar{position:absolute}body{transition:background-color var(--color-fade-speed) ease-in-out}#navbar:not(:empty){display:flex;align-items:center;justify-content:space-between;padding:.5em 1em;width:100%}#main{display:flex;flex-direction:column;height:100%;width:100%;align-items:stretch;justify-content:center}#main-horizontal{display:flex;flex-direction:row;flex-grow:1;width:100%;align-items:stretch;justify-content:center}#center-content{flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0!important;transition:opacity .2s ease-in-out;pointer-events:none}#center-content>.obsidian-document{padding-left:2em;padding-right:1em;margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}body #center-content>.obsidian-document>.markdown-preview-sizer{padding-bottom:80vh;width:100%;max-width:var(--line-width);flex-basis:var(--line-width);transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document>div{width:100%!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document:not([data-type=markdown]).embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}#center-content>.obsidian-document:not([data-type=markdown]).embed>*{max-width:100%;max-height:100%;object-fit:contain}:not(h1,h2,h3,h4,h5,h6,li):has(> :is(.math,table)){overflow-x:auto!important}#center-content>.obsidian-document:not([data-type=markdown]){overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.obsidian-document[data-type=attachment]{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;width:100%}.obsidian-document[data-type=attachment]>*{outline:0;border:none;box-shadow:none}.obsidian-document[data-type=attachment] :is(img){max-width:90%;max-height:90%;object-fit:contain}.obsidian-document[data-type=attachment]>:is(audio){width:100%;max-width:min(90%,var(--line-width))}.obsidian-document[data-type=attachment]>:is(embed,iframe,video){width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}.canvas-wrapper>:is(.header,.footer){z-index:100;position:absolute;display:flex;justify-content:center;flex-direction:column;width:100%;align-items:center}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){let e=document.querySelectorAll("link[itemprop='include']");for(const t of e){let e=t.getAttribute("href");try{let o="";if(e.startsWith("https:")||e.startsWith("http:")||"file:"!=window.location.protocol){const n=await fetch(e);if(!n.ok){console.log("Could not include file: "+e),t?.remove();continue}o=await n.text()}else{const t=document.getElementById(btoa(encodeURI(e)));if(t){const e=JSON.parse(decodeURI(atob(t.getAttribute("value")??"")));o=e?.data??""}}let n=document.createRange().createContextualFragment(o);t.before(n),t.remove(),console.log("Included text: "+o),console.log("Included file: "+e)}catch(o){t?.remove(),console.log("Could not include file: "+e,o);continue}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script")));!function e(n){let l=o[n],c=n+1;l?(l&&"true"!=l.getAttribute("loaded")||n<o.length&&e(c),n<o.length&&l.addEventListener("load",(()=>e(c)))):n<o.length?e(c):t()}(0)}</script></head><body class="publish css-settings-manager styled-scrollbars show-inline-title show-ribbon is-focused"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="parsed-feature-container" style="display: contents;"><link itemprop="include" href="site-lib/html/custom-head-content-content.html"></div><div id="main"><div id="navbar"></div><div id="main-horizontal"><div id="left-content" class="leaf" style="--sidebar-width: var(--sidebar-width-left);"><div id="left-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><div id="search-container"><div id="search-wrapper"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div aria-label="Clear search" id="search-clear-button"></div></div></div></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="left-sidebar-content" class="leaf-content"></div></div><script defer="">let ls = document.querySelector("#left-sidebar"); ls.classList.toggle("is-collapsed", window.innerWidth < 768); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div></div><div id="center-content" class="leaf"><div class="obsidian-document markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings allow-fold-lists show-indentation-guide show-properties" data-type="markdown"><style id="MJX-CHTML-styles"></style><div class="markdown-preview-sizer markdown-preview-section"><div class="header"><h1 class="page-title heading inline-title" id="4.基本命令_0">4.基本命令</h1><div class="data-bar"></div></div><div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="el-div"><div data-callout-metadata="" data-callout-fold="" data-callout="warning" class="callout"><div class="callout-title" dir="auto"><div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-alert-triangle"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg></div><div class="callout-title-inner">本部分不提供所有命令</div></div><div class="callout-content">
+<p dir="auto">如果你需要具体命令参考，请使用<code>/help &lt;命令名称&gt;</code>来查看，未翻译的内容请自行翻译或提问！</p>
+</div></div></div><div class="el-div"><div data-callout-metadata="" data-callout-fold="" data-callout="faq" class="callout"><div class="callout-title" dir="auto"><div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-help-circle"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg></div><div class="callout-title-inner">命令语法</div></div><div class="callout-content">
+<h1 data-heading="符号" dir="auto" class="heading" id="符号_0">符号</h1>
+<p dir="auto">[xxx]-选填<br>
+{xxx}-NBT标签<br>
+&lt;xxx&gt;-必填<br>
+* -全部玩家（相当于@a）/全部实体/全部请求</p>
+</div></div></div><div class="el-h1"><h1 data-heading="玩家命令" dir="auto" class="heading" id="玩家命令_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>玩家命令</h1></div><div class="el-h2"><h2 data-heading="账户" dir="auto" class="heading" id="账户_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>账户</h2></div><div class="el-p"><p dir="auto"><code>/cp</code> - 在游戏内直接更改密码（密码不会在控制台显示）</p></div><div class="el-h2"><h2 data-heading="传送" dir="auto" class="heading" id="传送_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>传送</h2></div><div class="el-p"><p dir="auto"><code>/tpa&nbsp;&lt;player&gt;</code> 传送到指定玩家的请求<br>
+<code>/tpaall&nbsp;&lt;player&gt;</code> 请求所有玩家传送到你身边<br>
+<code>/tpahere&nbsp;&lt;player&gt;</code> 请求指定玩家传送到你身边<br>
+<code>/tpaccept</code> 接受最新的传送请求<br>
+<code>/tpaccept&nbsp;*</code> 接受所有传送请求<br>
+<code>/tpaccept&nbsp;&lt;player&gt;</code> 接受指定玩家的传送请求<br>
+<code>/tpauto&nbsp;[player]</code> 自动接受TPA请求的切换开关<br>
+<code>/tpacancel</code> 取消你所有未完成的传送请求<br>
+<code>/tpacancel&nbsp;&lt;player&gt;</code> 取消你与指定玩家的所有未完成传送请求<br>
+<code>/tpdeny&nbsp;*</code> 拒绝所有传送请求<br>
+<code>/tpdeny&nbsp;&lt;player&gt;</code> 拒绝指定玩家的传送请求<br>
+<code>/tpdeny</code> 拒绝最新的传送请求</p></div><div class="el-h2"><h2 data-heading="返回" dir="auto" class="heading" id="返回_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>返回</h2></div><div class="el-p"><p dir="auto"><code>/back</code>传送你回到之前的位置（如死亡点）</p></div><div class="el-h2"><h2 data-heading="家" dir="auto" class="heading" id="家_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>家</h2></div><div class="el-p"><p dir="auto"><code>/sethome [name]</code>在你所在位置设置名为&lt;name&gt;的家<br>
+<code>/delhome&nbsp;&lt;name&gt;</code> 删除你名下名为&lt;name&gt;的家<br>
+<code>/home&nbsp;&lt;name&gt;</code>传送你回到你名下名为&lt;name&gt;的家<br>
+<code>/renamehome&nbsp;&lt;name&gt; &lt;new name&gt;</code>将你的家改名为&lt;new name&gt;</p></div><div class="el-h2"><h2 data-heading="空岛指令 (别名: /is)" dir="auto" class="heading" id="空岛指令_(别名_/is)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>空岛指令 (别名: /is)</h2></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">指令</th>
+<th dir="ltr">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><code>/island</code></td>
+<td dir="ltr">主岛屿指令</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island about</code></td>
+<td dir="ltr">关于此插件</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island ban &lt;player&gt;</code></td>
+<td dir="ltr">将玩家从你的岛屿中禁止</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island banlist</code></td>
+<td dir="ltr">列出被禁止的玩家</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island biomes</code></td>
+<td dir="ltr">主要生物群系插件指令，打开生物群系更改 GUI。</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island challenges [Level]</code></td>
+<td dir="ltr">让玩家使用 /island challenges 指令。</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island create &lt;blueprint&gt;</code></td>
+<td dir="ltr">使用可选蓝图创建岛屿。（通常不直接由玩家使用）</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island go [home name]</code></td>
+<td dir="ltr">传送到你的岛屿或指定的家名称（如果启用）</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island info &lt;player&gt;</code></td>
+<td dir="ltr">显示关于你的岛屿或玩家岛屿的信息</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island language</code></td>
+<td dir="ltr">选择语言</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island level [player]</code></td>
+<td dir="ltr">计算你的岛屿等级或显示 [player] 的等级 - 需要等级插件</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island near</code></td>
+<td dir="ltr">显示你周围相邻岛屿的名称（如有）</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island reset</code></td>
+<td dir="ltr">重新开始你的岛屿并删除旧岛屿</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island homes</code></td>
+<td dir="ltr">列出你设置的家</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island sethome [home name]</code></td>
+<td dir="ltr">设置你的家传送点并可选地命名它</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island deletehome [home name]</code></td>
+<td dir="ltr">删除家传送点</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island rename [home name]</code></td>
+<td dir="ltr">重命名家传送点</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island settings</code></td>
+<td dir="ltr">显示岛屿设置</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island spawn</code></td>
+<td dir="ltr">传送到生成点</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island setname</code></td>
+<td dir="ltr">设置你的岛屿名称</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island resetname</code></td>
+<td dir="ltr">重置你的岛屿名称</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island unban &lt;player&gt;</code></td>
+<td dir="ltr">从你的岛屿中解除玩家的禁止</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island team</code></td>
+<td dir="ltr">管理你的团队</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island team accept</code></td>
+<td dir="ltr">接受邀请</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island team coop &lt;player&gt;</code></td>
+<td dir="ltr">让玩家获得你岛屿上的合作等级</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island team demote &lt;player&gt;</code></td>
+<td dir="ltr">将岛屿上的玩家降级</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island team leave</code></td>
+<td dir="ltr">离开你的岛屿</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island team invite</code></td>
+<td dir="ltr">邀请玩家加入你的岛屿</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island team kick &lt;player&gt;</code></td>
+<td dir="ltr">从你的岛屿中删除成员</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island team promote &lt;player&gt;</code></td>
+<td dir="ltr">将岛屿上的玩家升级</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island team reject</code></td>
+<td dir="ltr">拒绝邀请</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island team setowner &lt;player&gt;</code></td>
+<td dir="ltr">将你的岛屿所有权转移给成员</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island team trust &lt;player&gt;</code></td>
+<td dir="ltr">给玩家你岛屿上的信任等级</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island top</code></td>
+<td dir="ltr">显示前十名 - 需要等级插件</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island team uncoop &lt;player&gt;</code></td>
+<td dir="ltr">从玩家中移除合作等级</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island team untrust &lt;player&gt;</code></td>
+<td dir="ltr">从玩家中移除信任等级</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island warp &lt;name&gt;</code></td>
+<td dir="ltr">传送到玩家的传送点标记</td>
+</tr>
+<tr>
+<td dir="ltr"><code>/island warps</code></td>
+<td dir="ltr">打开传送点面板</td>
+</tr>
+</tbody>
+</table></div><div class="el-h2"><h2 data-heading="挂机" dir="auto" class="heading" id="挂机_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>挂机</h2></div><div class="el-p"><p dir="auto"><code>/afk&nbsp;[message]</code> 切换你的挂机状态,可以添加原因，长时间未操作会自动使用</p></div><div class="el-h2"><h2 data-heading="垃圾桶" dir="auto" class="heading" id="垃圾桶_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>垃圾桶</h2></div><div class="el-p"><p dir="auto"><code>/bin</code> 打开垃圾桶菜单</p></div><div class="el-h2"><h2 data-heading="领地命令" dir="auto" class="heading" id="领地命令_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>领地命令</h2></div><div class="el-h3"><h3 data-heading="选择命令" dir="auto" class="heading" id="选择命令_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>选择命令</h3></div><div class="el-p"><p dir="auto"><code>/res select [x] [y] [z]</code> - 选择领地的长方体区域，X Y 和Z 都是从你当前位置为中心的距离，你也可以用一个工具（默认是木斧）来选择地块。<br>
+<code>/res select chunk</code> -  选取一整个chunk。<br>
+<code>/res select expand [格数]</code> - 向你的前方延伸选区。<br>
+<code>/res select size</code> - 显示已选择区域的尺寸。<br>
+<code>/res select shift [格数]</code> - 向你的前方移动选区。<br>
+<code>/res select vert</code> - 把选区从基岩层延伸到最大建筑高度。</p></div><div class="el-h3"><h3 data-heading="创建命令" dir="auto" class="heading" id="创建命令_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>创建命令</h3></div><div class="el-p"><p dir="auto"><code>/res area [add/remove/replace] [区域id]</code> - 向叫做<code>[领地名]</code>的领地增加(add)、从其中去除(remove)或是替换 (replace) 区域。可与同一领地内的区域重合。<br>
+<code>/res create [领地名]</code> - 选择好区域后创建一个叫做<code>[领地名]</code>的领地<br>
+<code>/res remove [领地名]</code> - 移除一个叫<code>[领地名]</code>的领地<br>
+<code>/res removeall</code> - 移除所有领地<br>
+<code>/res subzone [子区域名]</code> - 在领地内创建一块子区域，你必须是所有者才行。</p></div><div class="el-h3"><h3 data-heading="信息命令" dir="auto" class="heading" id="信息命令_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>信息命令</h3></div><div class="el-p"><p dir="auto"><code>/res area list [领地名]</code> - 列出某领地的所有区域<br>
+<code>/res area listall [领地名]</code> - 列出某领地的所有区域以及他们的坐标<br>
+<code>/res current</code> - 显示你所在的领地<br>
+<code>/res info</code> - 得到某领地的信息<br>
+<code>/res list</code> - 显示你拥有的领地<br>
+<code>/res listall</code> - 显示所有领地<br>
+<code>/res limits</code> - 显示重要的权限<br>
+<code>/res sublist</code> - 显示你所在领地的所有子区域</p></div><div class="el-h3"><h3 data-heading="权限命令" dir="auto" class="heading" id="权限命令_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>权限命令</h3></div><div class="el-p"><p dir="auto"><code>/res gset [群组名] [权限] [true/false/remove]</code> - 设置某领地对于某群组的权限<br>
+<code>/res lset [黑名单/忽略名单] [材质]</code> - 从某领地的黑名单/忽略名单中增加/移除某材质<br>
+<code>/res lset info</code> - 显示某领地的黑名单/忽略名单设置<br>
+<code>/res pset [玩家名] [权限] [true/false/remove]</code> - 设置某领地对于某玩家的权限<br>
+<code>/res set [权限] [true/false/remove]</code> - 设置某领地的权限</p></div><div class="el-h3"><h3 data-heading="其他命令" dir="auto" class="heading" id="其他命令_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>其他命令</h3></div><div class="el-p"><p dir="auto"><code>/res default [领地名]</code> - 重置某领地的权限设置<br>
+<code>/res give [领地名] [玩家名]</code> - 将某领地赠与某玩家，你必须是领主且被赠予玩家在线<br>
+<code>/res lists</code> - 预定领地许可清单的详细信息<br>
+<code>/res message [领地名] [enter/leave] [信息]</code> - 设置进入/退出某领地时候显示的信息<br>
+<code>/res message [领地名] remove [enter/leave]</code> - 移除进入/退出某领地时候的信息<br>
+<code>/res mirror [源领地名] [目标领地名]</code> - 复制源领地的权限设置至目标领地<br>
+<code>/res rename - [旧名称] [新名称]</code> 重命名领地(对于子领地旧名称必须全名，新名称可以只写子领地名 )<br>
+<code>/res renamearea [领地名] [旧名称] [新名称]</code> - 重命名某领地中某区域的名称<br>
+<code>/res tp [领地名]</code> - 传送至某领地<br>
+<code>/res tpset</code> - 设置当前领地的传送点为你站立的地方<br>
+<code>/res unstuck</code> - 将你从当前领地移出</p></div><div class="el-h3"><h3 data-heading="交易命令" dir="auto" class="heading" id="交易命令_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>交易命令</h3></div><div class="el-p"><p dir="auto"><code>/res lease [renew/cost] [领地名]</code> - 更新/显示 更新一个领地的费用（？意义不明）<br>
+<code>/res market list</code> - 显示在售的所有领地<br>
+<code>/res market info [领地名]</code> - 显示在售的某领地的信息<br>
+<code>/res market sell [领地名] [价格]</code> - 将某领地出售<br>
+<code>/res market unsell [领地名]</code> - 将某领地下架<br>
+<code>/res market buy [领地名]</code> 购买某领地<br>
+<code>/res market rentable [领地名] [价格] [天数]</code> - 将某领地以<code>[价格]/[天数]</code>出租并设置可否自动续期<br>
+<code>/res market rent [领地名]</code> - 设置某领地出租是否可自动续期<br>
+<code>/res market release [领地名]</code> - 取消某领地的出租</p></div><div class="el-h2"><h2 data-heading="物品包" dir="auto" class="heading" id="物品包_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>物品包</h2></div><div class="el-p"><p dir="auto"><code>/kit</code> - 打开物品包菜单</p></div><div class="el-h1"><h1 data-heading="管理命令" dir="auto" class="heading" id="管理命令_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>管理命令</h1></div><div class="el-h2"><h2 data-heading="临时封禁（IP）" dir="auto" class="heading" id="临时封禁（IP）_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>临时封禁（IP）</h2></div><div class="el-p"><p dir="auto"><code>/tempbanip&nbsp;&lt;player|ip-address&gt; &lt;datediff&gt; [reason]</code> - 在指定时间内封禁指定的IP地址，理由可选<br>
+<code>/tempban&nbsp;&lt;player&gt; &lt;datediff&gt; [reason]</code> - 将指定玩家封禁指定时间，理由可选</p></div><div class="el-h2"><h2 data-heading="禁言" dir="auto" class="heading" id="禁言_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>禁言</h2></div><div class="el-p"><p dir="auto"><code>/mute&nbsp;&lt;player&gt; &lt;datediff&gt; [reason]</code> - 在指定时间内禁言指定玩家，理由可选<br>
+<code>/mute&nbsp;&lt;player&gt;</code>-  永久禁言指定玩家，或者如果已经处于禁言状态，则解除禁言</p></div><div class="footer"><div class="data-bar"></div></div></div></div></div><div id="right-content" class="leaf" style="--sidebar-width: var(--sidebar-width-right);"><div id="right-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme-toggle-input" id=""><input class="theme-toggle-input" type="checkbox" id="theme-toggle-input"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="right-sidebar-content" class="leaf-content"><div class="graph-view-wrapper"><div class="feature-header"><div class="feature-title">Interactive Graph</div></div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<div class="graph-icon graph-global" role="button" aria-label="Global Graph" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-git-fork"><circle cx="12" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"></path><path d="M12 12v3"></path></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div id="outline" class=" tree-container"><div class="feature-header"><div class="feature-title">Table Of Contents</div><button class="clickable-icon nav-action-button tree-collapse-all" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="加入服务器帮助/4.基本命令.html#4.基本命令_0" data-path="#4.基本命令_0"><div class="tree-item-inner heading-link" heading-name="4.基本命令">4.基本命令</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="加入服务器帮助/4.基本命令.html#符号_0" data-path="#符号_0"><div class="tree-item-inner heading-link" heading-name="符号">符号</div></a><div class="tree-item-children"></div></div><div class="tree-item mod-collapsible" data-depth="1"><a class="tree-item-self is-clickable mod-collapsible" href="加入服务器帮助/4.基本命令.html#玩家命令_0" data-path="#玩家命令_0"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="玩家命令">玩家命令</div></a><div class="tree-item-children"><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="加入服务器帮助/4.基本命令.html#账户_0" data-path="#账户_0"><div class="tree-item-inner heading-link" heading-name="账户">账户</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="加入服务器帮助/4.基本命令.html#传送_0" data-path="#传送_0"><div class="tree-item-inner heading-link" heading-name="传送">传送</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="加入服务器帮助/4.基本命令.html#返回_0" data-path="#返回_0"><div class="tree-item-inner heading-link" heading-name="返回">返回</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="加入服务器帮助/4.基本命令.html#家_0" data-path="#家_0"><div class="tree-item-inner heading-link" heading-name="家">家</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="加入服务器帮助/4.基本命令.html#空岛指令_(别名_/is)_0" data-path="#空岛指令_(别名_/is)_0"><div class="tree-item-inner heading-link" heading-name="空岛指令 (别名: /is)">空岛指令 (别名: /is)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="加入服务器帮助/4.基本命令.html#挂机_0" data-path="#挂机_0"><div class="tree-item-inner heading-link" heading-name="挂机">挂机</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="加入服务器帮助/4.基本命令.html#垃圾桶_0" data-path="#垃圾桶_0"><div class="tree-item-inner heading-link" heading-name="垃圾桶">垃圾桶</div></a><div class="tree-item-children"></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable mod-collapsible" href="加入服务器帮助/4.基本命令.html#领地命令_0" data-path="#领地命令_0"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="领地命令">领地命令</div></a><div class="tree-item-children"><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="加入服务器帮助/4.基本命令.html#选择命令_0" data-path="#选择命令_0"><div class="tree-item-inner heading-link" heading-name="选择命令">选择命令</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="加入服务器帮助/4.基本命令.html#创建命令_0" data-path="#创建命令_0"><div class="tree-item-inner heading-link" heading-name="创建命令">创建命令</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="加入服务器帮助/4.基本命令.html#信息命令_0" data-path="#信息命令_0"><div class="tree-item-inner heading-link" heading-name="信息命令">信息命令</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="加入服务器帮助/4.基本命令.html#权限命令_0" data-path="#权限命令_0"><div class="tree-item-inner heading-link" heading-name="权限命令">权限命令</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="加入服务器帮助/4.基本命令.html#其他命令_0" data-path="#其他命令_0"><div class="tree-item-inner heading-link" heading-name="其他命令">其他命令</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="加入服务器帮助/4.基本命令.html#交易命令_0" data-path="#交易命令_0"><div class="tree-item-inner heading-link" heading-name="交易命令">交易命令</div></a><div class="tree-item-children"></div></div></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="加入服务器帮助/4.基本命令.html#物品包_0" data-path="#物品包_0"><div class="tree-item-inner heading-link" heading-name="物品包">物品包</div></a><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="1"><a class="tree-item-self is-clickable mod-collapsible" href="加入服务器帮助/4.基本命令.html#管理命令_0" data-path="#管理命令_0"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="管理命令">管理命令</div></a><div class="tree-item-children"><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="加入服务器帮助/4.基本命令.html#临时封禁（IP）_0" data-path="#临时封禁（IP）_0"><div class="tree-item-inner heading-link" heading-name="临时封禁（IP）">临时封禁（IP）</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="加入服务器帮助/4.基本命令.html#禁言_0" data-path="#禁言_0"><div class="tree-item-inner heading-link" heading-name="禁言">禁言</div></a><div class="tree-item-children"></div></div></div></div></div></div></div><script defer="">let rs = document.querySelector("#right-sidebar"); rs.classList.toggle("is-collapsed", window.innerWidth < 768); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></div></div></body></html>
